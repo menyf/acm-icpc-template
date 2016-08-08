@@ -21,14 +21,22 @@
     * [Prim\_Heap](图论/最小生成树/Prim_Heap.md)
     * [Kruskal](图论/最小生成树/Kruskal.md)
 * [LCA](图论/LCA/README.md)
-    * [LCA-&gt;RMQ](图论/LCA/RMQ.md)
+    * [LCA -&gt; RMQ](图论/LCA/RMQ.md)
     * [Tarjan](图论/LCA/Tarjan.md)
     * [倍增算法](图论/LCA/倍增算法.md)
+* [二分图](图论/二分图/README.md)
+    * [匈牙利算法](图论/二分图/匈牙利算法.md)
+    * [Hopcroft-Karp](图论/二分图/Hopcroft_Karp.md)
 * [网络流](图论/网络流/README.md)
     * [EdmondsKarp](图论/网络流/EdmondsKarp.md)
     * [Dinic](图论/网络流/Dinic.md)
 
 ## PART III - 动态规划
+* [树状数组](数据结构/树状数组/README.md)
+    * [树状数组](数据结构/树状数组/树状数组.md)
+    * [二维树状数组](数据结构/树状数组/二维树状数组.md)
+* [线段树](数据结构/线段树/README.md)
+    * [线段树](数据结构/线段树/线段树.md)
 
 ## PART IV - 数据结构
 
