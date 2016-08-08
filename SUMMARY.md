@@ -10,4 +10,9 @@
 * [Miller\_Rabbin](数论/miller_rabbin.md)
 
 ## PART II - 图论
+* [网络流](网络流.md)
+    * EdmondsKarp
+
+## PART III - 动态规划
+* [最长上升子序列](最长上升子序列.md)
 
