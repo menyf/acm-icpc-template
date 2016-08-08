@@ -13,7 +13,7 @@
             "weibo": null
         },
         "sidebar": {
-            "MyBolg Blog": "http://menyf.github.io"
+            "GitHub Blog": "http://menyf.github.io"
         }
     },
     "output": "../test-gh-pages",
@@ -32,7 +32,8 @@
     },
     "plugins": [
         "disqus",
-        "multipart"
+        "multipart",
+        "back-to-top-button"
 
     ],
     "pluginsConfig": {
