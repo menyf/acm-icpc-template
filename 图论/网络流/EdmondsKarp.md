@@ -19,7 +19,7 @@ Tips：
 
 复杂度较高，慎用
 
-```
+```C++
 #define maxn 10005//表示节点数量
 struct edge{
     int from,to,cap,flow;

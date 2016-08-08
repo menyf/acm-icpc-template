@@ -12,7 +12,7 @@
 较EdmondsKarp快一点，但是最好用ISAP
 
 ## 模版
-```
+```C++
 #define vmax 20005  //最大顶点数
 #define emax 500005 //最大边数
 struct Dinic{

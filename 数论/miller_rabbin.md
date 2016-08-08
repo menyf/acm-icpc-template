@@ -20,7 +20,7 @@ Tips:
  * 可能是伪素数，但概率极小
  
 
-```
+```C++
 const int S = 20; //随机算法判定次数，S越大，判错概率越小
 ll mult_mod(ll a,ll b,ll mod){
     return (a*b-(ll)(a/(long double)mod*b+1e-3)*mod+mod)%mod;

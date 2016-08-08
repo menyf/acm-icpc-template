@@ -8,7 +8,7 @@
 1. init();
 2. Lucas(n, m);//求组合数
 
-```
+```C++
 const long long mod=110119;
 const int fcnt=120005;
 long long fac[fcnt];
