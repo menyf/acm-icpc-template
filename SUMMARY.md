@@ -12,9 +12,34 @@
 ## PART II - 图论
 * [最短路](图论/最短路/README.md)
     * [Dijkstra](图论/最短路/Dijkstra.md)
+    * [Dijkstra\_Heap](图论/最短路/Dijkstra_Heap.md)
+    * [Bellman-Ford](图论/最短路/Bellman_Ford.md)
     * [Floyd](图论/最短路/Floyd.md)
     * [SPFA](图论/最短路/SPFA.md)
+* [最小生成树](图论/最小生成树/README.md)
+    * [Prim](图论/最小生成树/Prim.md)
+    * [Prim\_Heap](图论/最小生成树/Prim_Heap.md)
+    * [Kruskal](图论/最小生成树/Kruskal.md)
+* [LCA](图论/LCA/README.md)
+    * [LCA-&gt;RMQ](图论/LCA/RMQ.md)
+    * [Tarjan](图论/LCA/Tarjan.md)
+    * [倍增算法](图论/LCA/倍增算法.md)
 * [网络流](图论/网络流/README.md)
     * [EdmondsKarp](图论/网络流/EdmondsKarp.md)
     * [Dinic](图论/网络流/Dinic.md)
+
+## PART III - 动态规划
+
+## PART IV - 数据结构
+
+## PART V - 字符串
+* [KMP](字符串/KMP.md)
+* [字典树](字符串/字典树.md)
+* [AC自动机](字符串/AC自动机.md)
+* [后缀数组](字符串/后缀数组.md)
+* [Manacher](字符串/Manacher.md)
+
+## PART VI - 博弈
+
+## 基本算法
 
