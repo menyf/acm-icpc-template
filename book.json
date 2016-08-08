@@ -1,0 +1,45 @@
+{
+    "author": "MenYifan",
+    "description": "This is a sample book created by gitbook",
+    "extension": null,
+    "generator": "site",
+    "isbn": "null",
+    "links": {
+        "sharing": {
+            "all": null,
+            "facebook": null,
+            "google": null,
+            "twitter": null,
+            "weibo": null
+        },
+        "sidebar": {
+            "MyBolg Blog": "http://menyf.github.io"
+        }
+    },
+    "output": "../test-gh-pages",
+    "pdf": {
+        "fontSize": 12,
+        "footerTemplate": null,
+        "headerTemplate": null,
+        "margin": {
+            "bottom": 36,
+            "left": 62,
+            "right": 62,
+            "top": 36
+        },
+        "pageNumbers": true,
+        "paperSize": "a4"
+    },
+    "plugins": [
+        "disqus",
+        "multipart"
+
+    ],
+    "pluginsConfig": {
+        "disqus": {
+            "shortName": "menyifan"
+        }
+    },
+    "title": "Sample GitBook",
+    "variables": {}
+}
