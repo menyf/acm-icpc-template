@@ -1,6 +1,7 @@
 # Summary
 
-* [简介](README.md)* [设置](Setting/Setting.md)
+## ACM-ICPC Templates
+* [简介](README.md)
 
 ## PART I 数论
 * [快速幂&乘](数论/快速幂.md)
@@ -10,3 +11,4 @@
 * [Miller\_Rabbin](数论/miller_rabbin.md)
 
 ## PART II 图论
+
