@@ -9,6 +9,6 @@
 * 仅限于`int`类型变量
 
 ## 模版
-```
+```C++
 void Out(int a){    //输出外挂    if(a < 0)    {        putchar('-');        a = -a;    }    if(a >= 10)       Out(a / 10);    putchar(a % 10 + '0');}
 ```
