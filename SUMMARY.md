@@ -2,6 +2,11 @@
 
 * [简介](README.md)
 
+## Setting
+* [头文件](Setting/头文件.md)
+* [输入](Setting/Input.md)
+* [输出](Setting/Output.md)
+
 ## PART I - 数论
 * [快速幂&乘](数论/快速幂.md)
 * [线性筛素数表](数论/线性筛素数表.md)
@@ -21,7 +26,7 @@
     * [Prim\_Heap](图论/最小生成树/Prim_Heap.md)
     * [Kruskal](图论/最小生成树/Kruskal.md)
 * [LCA](图论/LCA/README.md)
-    * [LCA -&gt; RMQ](图论/LCA/RMQ.md)
+    * [LCA -&gt; RMQ](图论/LCA/RMQ.md)
     * [Tarjan](图论/LCA/Tarjan.md)
     * [倍增算法](图论/LCA/倍增算法.md)
 * [二分图](图论/二分图/README.md)

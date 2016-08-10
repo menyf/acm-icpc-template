@@ -34,7 +34,9 @@
         "disqus",
         "multipart",
         "back-to-top-button",
-        "toggle-chapters"
+        "toggle-chapters",
+        "prism", 
+        "-highlight"
 
     ],
     "pluginsConfig": {
