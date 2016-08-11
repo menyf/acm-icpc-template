@@ -2,7 +2,6 @@
 
 本文转自：[组合游戏 - SG函数和SG定理](http://blog.csdn.net/luomingjun12315/article/details/45555495)
 
-
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 在介绍SG函数和SG定理之前我们先介绍介绍必胜点与必败点吧.<br>
 </p>
 <div class="para"><span style="font-size:14px; color:#ff0000">必胜点和必败点的概念</span><span style="font-size:14px">：</span></div>
@@ -66,7 +65,7 @@ void  getSG(int n){
     }
 }</pre>
 <p><br>
-现在我们来一个实战演练（<span style="color:#3333ff"><a target="_blank" target="_blank" href="http://acm.hdu.edu.cn/showproblem.php?pid=1848">题目链接</a></span>）：</p>
+现在我们来一个实战演练（<span style="color:#3333ff"><a target="_blank" target="_blank" href="http://acm.hdu.edu.cn/showproblem.php?pid=1848">HDU1848</a></span>）：</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 只要按照上面的思路，解决这个就是分分钟的问题。</p>
 <p>代码如下：</p>
 <pre class="cpp" name="code">#include &lt;stdio.h&gt;
