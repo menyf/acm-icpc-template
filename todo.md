@@ -5,6 +5,7 @@
 1. [这个博客](http://happylcj.github.io/2017/01/01/ACM模板/)有一些平时不常用的位运算知识，值得收纳
 2. 发现一个野生的[ACM模版](https://hrbust-acm-team.gitbooks.io/acm-book/content/index.html)，有空研究抄袭一下
 3. 发现另一个野生的[ACM模版](https://svtter.gitbooks.io/book_acm/content/index.html)，有空研究抄袭一下
+4. 还有区间DP要学
 
 2016.8.10
 
