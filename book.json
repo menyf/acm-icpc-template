@@ -39,7 +39,7 @@
     ],
     "pluginsConfig": {
         "disqus": {
-            "shortName": "menyifan"
+            "shortName": "myf-acm-template"
         }
     },
     "title": "Sample GitBook",
