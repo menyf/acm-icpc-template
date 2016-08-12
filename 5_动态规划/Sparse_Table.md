@@ -67,3 +67,52 @@ int query(int l,int r,int flag){
     else return min(mn[l][k],mn[r-(1<<k)+1][k]);
 }
 ```
+
+### 二维RMQ
+#### Tips
+* `data[][]`下标从1~n行 1~m列
+
+#### 代码
+```C++
+#define RMQ max
+const int NV = 33;//对于整型而言，其值不会超过2^32，因此第二维大小为33已经足够
+const int maxn = 500;//数据量
+int rmq[NV][NV][maxn][maxn];
+void init(int data[][maxn],int n,int m)// 1~n行 1~m列
+{
+    int mx=floor(log(n+0.0)/log(2.0));
+    int my=floor(log(m+0.0)/log(2.0));
+    for(int i=1;i<=n;i++)
+        for(int j=1;j<=m;j++)
+            rmq[0][0][i][j]=data[i][j];
+    
+    for(int i=0;i<=mx;i++){
+        for(int j=0;j<=my;j++){
+            if(i==0&&j==0) continue;
+            for(int row=1;row+(1<<i)-1<=n;row++){
+                for(int col=1;col+(1<<j)-1<=m;col++){
+                    if(i==0)
+                        rmq[i][j][row][col]=RMQ(rmq[i][j-1][row][col]
+                                               ,rmq[i][j-1][row][col+(1<<(j-1))]);
+                    else
+                        rmq[i][j][row][col]=RMQ(rmq[i-1][j][row][col]
+                                               ,rmq[i-1][j][row+(1<<(i-1))][col]);
+                }
+            }
+        }
+    }
+}
+
+int query(int x1,int y1,int x2,int y2)
+{
+    int mx=floor(log(x2-x1+1.0)/log(2.0));
+    int my=floor(log(y2-y1+1.0)/log(2.0));
+    
+    int m1=rmq[mx][my][x1][y1];
+    int m2=rmq[mx][my][x2-(1<<mx)+1][y2-(1<<my)+1];
+    int m3=rmq[mx][my][x1][y2-(1<<my)+1];
+    int m4=rmq[mx][my][x2-(1<<mx)+1][y1];
+    
+    return RMQ(RMQ(m1,m2),RMQ(m3,m4));
+}
+```
