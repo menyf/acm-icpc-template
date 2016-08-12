@@ -15,7 +15,7 @@ struct ACAutomata
     int root,L;
     int newnode()
     {
-        for(int i = 0; i < 26; i++)
+        for(int i = 0; i < SIGMA_SIZE; i++)
             nxt[L][i] = -1;
         end[L++] = 0;
         return L-1;
@@ -45,7 +45,7 @@ struct ACAutomata
     {
         queue<int> q;
         fail[root] = root;
-        for(int i = 0; i < 26; i++)
+        for(int i = 0; i < SIGMA_SIZE; i++)
             if(nxt[root][i] == -1)
                 nxt[root][i] = root;
             else
@@ -57,7 +57,7 @@ struct ACAutomata
         {
             int now = q.front();
             q.pop();
-            for(int i = 0; i < 26; i++)
+            for(int i = 0; i < SIGMA_SIZE; i++)
                 if(nxt[now][i] == -1)//若该点不存在，直接将该位置指向失配指针的下一位
                     nxt[now][i] = nxt[fail[now]][i];
                 else
@@ -90,7 +90,7 @@ struct ACAutomata
         for(int i = 0; i < L; i++)
         {
             printf("id = %3d,fail = %3d,end = %3d,chi = [",i,fail[i],end[i]);
-            for(int j = 0; j < 26; j++)
+            for(int j = 0; j < SIGMA_SIZE; j++)
                 printf("%2d",nxt[i][j]);
             printf("]\n");
         }
