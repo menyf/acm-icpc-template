@@ -22,7 +22,7 @@
 
 ## PART III - 字符串
 * [KMP](3_字符串/KMP.md)
-* [Trie字典树](3_字符串/字典树.md)
+* [Trie前缀树](3_字符串/Trie前缀树.md)
 * [AC自动机](3_字符串/AC自动机.md)
 * [后缀数组](3_字符串/后缀数组.md)
 * [Manacher](3_字符串/Manacher.md)
