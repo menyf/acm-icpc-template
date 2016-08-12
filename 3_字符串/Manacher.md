@@ -4,9 +4,11 @@ manacher算法能在接近线性的时间找到最长的回文串。
 
 推荐一篇博客，看这篇博客看了三四次才把这个算法给搞明白->[Manacher's Algorithm 马拉车算法](http://www.cnblogs.com/grandyang/p/4475985.html)
 
+## 使用方法
+* `string subStr = Manacher(string s);` 返回值为最长回文串
 
 ## 模版
-```
+```C++
 #include <vector>
 #include <iostream>
 #include <string>

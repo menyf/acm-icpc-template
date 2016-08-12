@@ -4,11 +4,13 @@
 * `read(x);`读取整数`x`
 
 ## Tips
-* `read(x);`相当于`scanf("%d",&x);`
-* 只能读取`int`类型整数
+* 只能读取整数，包括`int`,`long long`,`unsigned int`,`unsigned long long`
 
-
+## 模版
 ```C++
-void read(int &x){    //输入外挂      int res = 0, flag = 0;      char ch;      if((ch = getchar()) == '-')         flag = 1;      else if(ch >= '0' && ch <= '9')         res = ch - '0';      while((ch = getchar()) >= '0' && ch <= '9')          res = res * 10 + (ch - '0');      return flag ? -res : res;  }  
-
+template <class T>inline bool Read(T &ret) {    char c; int sgn;    if(c=getchar(),c==EOF) return 0; //EOF
+    while(c!='-'&&(c<'0'||c>'9')) c=getchar();    sgn=(c=='-') ?-1:1 ;    ret=(c=='-') ?0:(c -'0');
+    while(c=getchar(),c>='0'&&c<='9')
+        ret=ret*10+(c-'0');
+    ret*=sgn;    return 1;}
 ```
