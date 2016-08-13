@@ -5,12 +5,17 @@ ISAP + Gap优化
 
 ## 使用方法
 1. `ISAP::init(st, ed, n);`初始化起点、终点、顶点数
-2. `ISAP::adde(u, v, cap);ISAP::adde(v, u, cap);`双向加边
+2. `ISAP::adde(u, v, cap);ISAP::adde(v, u, cap);`双向加边，如果拆点的话要注意出点和入点如`ISAP::adde(u+n, v, cap);ISAP::adde(v+n, u, cap);`
 3. `int ans = ISAP::maxflow();`得到结果
 
 ## Tips
 1. 该模版只能跑一次网络流
-2. 注意Vmax和Emax
+2. 注意Vmax和Emax，拆点的话要把顶点数加倍，尤其是Emax可能为
+3. 拆点的话要把顶点数加倍
+
+## 示例
+1. [HDU 4280 Island Transport](http://menyf.github.io/2016/08/13/hdu4280/)
+2. 最小割最大流：[HDU 4289 Control](http://menyf.github.io/2016/08/13/hdu4289/)
 
 ## 模版
 ```C++
