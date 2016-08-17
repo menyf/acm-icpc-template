@@ -9,7 +9,11 @@
 4. `cout<<d.dinic<<endl`输出最大流的值
 
 ## Tips
-较EdmondsKarp快一点，但是最好用ISAP
+* 较EdmondsKarp快一点，但是最好用ISAP
+* adde是加一条有向边，体现在参量网络上是加了正向反向两条边，如果原图中是无向的，应该执行两次加边过程
+
+## 示例
+* 网络流最大权闭合图[POJ 2987 Firing](http://menyf.github.io/2016/08/17/poj2987/)
 
 ## 模版
 ```C++

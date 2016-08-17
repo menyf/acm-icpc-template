@@ -39,7 +39,7 @@ void insert(char s[],int v=0)	//v表示该字符串的辅助信息，如权值�
         {
             memset(c[sz],0,sizeof(c[sz]));
             // val[sz]=0;
-            c[u][s[i]]=sz++;
+            c[u][ch]=sz++;
         }
         u=c[u][ch];
         cnt[u]++;

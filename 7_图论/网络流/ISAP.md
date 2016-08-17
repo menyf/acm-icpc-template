@@ -16,6 +16,7 @@ ISAP + Gap优化
 ## 示例
 1. [HDU 4280 Island Transport](http://menyf.github.io/2016/08/13/hdu4280/)
 2. 最小割最大流：[HDU 4289 Control](http://menyf.github.io/2016/08/13/hdu4289/)
+3. 最大权闭合图：[HDU 5855 Less Time, More profit](http://menyf.github.io/2016/08/16/hdu5855/)
 
 ## 模版
 ```C++
