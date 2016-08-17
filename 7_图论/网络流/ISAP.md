@@ -3,9 +3,12 @@
 ## 说明
 ISAP + Gap优化
 
+* `node.cap` 残量网络中该边剩余可以走的流量
+* `node.flow` 最大流经过这条边的流量
+
 ## 使用方法
 1. `ISAP::init(st, ed, n);`初始化起点、终点、顶点数
-2. `ISAP::adde(u, v, cap);ISAP::adde(v, u, cap);`双向加边，如果拆点的话要注意出点和入点如`ISAP::adde(u+n, v, cap);ISAP::adde(v+n, u, cap);`
+2. `ISAP::adde(u, v, cap);`**是一个单向加边的过程**，如果拆点的话要注意出点和入点如`ISAP::adde(u+n, v, cap);`
 3. `int ans = ISAP::maxflow();`得到结果
 
 ## Tips
@@ -17,6 +20,7 @@ ISAP + Gap优化
 1. [HDU 4280 Island Transport](http://menyf.github.io/2016/08/13/hdu4280/)
 2. 最小割最大流：[HDU 4289 Control](http://menyf.github.io/2016/08/13/hdu4289/)
 3. 最大权闭合图：[HDU 5855 Less Time, More profit](http://menyf.github.io/2016/08/16/hdu5855/)
+4. 最大权闭合图[POJ 2987 Firing](http://menyf.github.io/2016/08/17/poj2987/)
 
 ## 模版
 ```C++

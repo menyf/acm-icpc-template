@@ -74,7 +74,7 @@ struct ACAutomata
         int res = 0;
         for(int i = 0; i < len; i++)
         {
-            now = nxt[now][buf[i]-'a'];
+            now = nxt[now][idx(buf[i])];
             int tmp = now;
             while(tmp != root)
             {
