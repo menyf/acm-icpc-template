@@ -16,7 +16,7 @@ RMQ：Range Minimum(Maximum) Query
 
 ## Tips
 * 建出来的树为空树，默认每个点值都为0，需要自行将值update上去，或者修改build中`sum[rt]=0;`为输入操作`scanf("%d",sum+rt);`
-* RMQ为宏定义，请根据情况自行修改为`max`或者`min`
+* RMQ为宏定义，请根据情况自行修改为`max`或者`min`，对应修改`query`中的`res`为`-INF`或者`INF`
 
 ## 模版
 ```C++
@@ -51,7 +51,7 @@ void update(int pos,int val,int l,int r,int rt=1){
 int query(int L,int R,int l,int r,int rt=1){
     if (L<=l&&r<=R) return sum[rt];
     int m=(l+r)>>1;
-    int res=0;
+    int res=-INF;	//防负数的坑
     if (L<=m) res=RMQ(res,query(L, R, lson));
     if (R>m)  res=RMQ(res,query(L, R, rson));
     return res;
