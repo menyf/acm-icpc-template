@@ -34,20 +34,11 @@
         "disqus",
         "multipart",
         "back-to-top-button",
-        "toggle-chapters",
-        "-highlight",
-        "highlight-pro"
+        "toggle-chapters"
     ],
     "pluginsConfig": {
         "disqus": {
             "shortName": "myf-acm-template"
-        },
-        "highlight-pro": {
-            "theme": "mono-blue",
-            "map": {
-                "shell": "bash",
-                "sh": "bash"
-            }
         }
     },
     "title": "Manyfun711's ACM Template",

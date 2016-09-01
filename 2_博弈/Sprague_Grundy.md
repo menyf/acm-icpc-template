@@ -45,7 +45,9 @@
 <p>3、最后模拟mex运算，也就是我们在标记&#20540;中 搜索 未被标记&#20540; 的最小&#20540;，将其赋&#20540;给SG(x)。</p>
 <p>4、我们不断的重复 2 - 3 的步骤，就完成了 计算1~n 的函数&#20540;。</p>
 <p>代码实现如下：</p>
-<pre class="cpp" name="code">//f[N]:可改变当前状态的方式，N为方式的种类，f[N]要在getSG之前先预处理
+
+```C++
+//f[N]:可改变当前状态的方式，N为方式的种类，f[N]要在getSG之前先预处理
 //SG[]:0~n的SG函数值
 //S[]:为x后继状态的集合
 int f[N],SG[MAXN],S[MAXN];
@@ -63,7 +65,9 @@ void  getSG(int n){
             break;
         }
     }
-}</pre>
+}
+```
+
 <p><br>
 现在我们来一个实战演练（<span style="color:#3333ff"><a target="_blank" target="_blank" href="http://acm.hdu.edu.cn/showproblem.php?pid=1848">HDU1848</a></span>）：</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 只要按照上面的思路，解决这个就是分分钟的问题。</p>

@@ -1,6 +1,6 @@
-# Mobius反演
+# 莫比乌斯反演
 
-莫比乌斯反演的形式
+莫比乌斯反演（mobius）的形式
 
 ![](http://img.blog.csdn.net/20160309185255800)
 
@@ -22,7 +22,7 @@
 
 代码求`mu`：
 
-```
+```C++
 int normal[maxn];
 int mu[maxn];
 int prime[maxn];
