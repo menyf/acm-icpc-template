@@ -22,8 +22,9 @@ ArithmeticException，而负数除以正数的除法则产生一个负（或零�
 
 当为任何输入参数传递 null 对象引用时，此类中的所有方法和构造方法都将抛出 NullPointerException。  
 
-字段摘要 
->static BigInteger ONE 
+### 字段摘要 
+```java
+static BigInteger ONE 
           BigInteger 的常量 1。 
 static BigInteger TEN 
           BigInteger 的常量 10。 
@@ -42,7 +43,17 @@ BigInteger(String val)
           将 BigInteger 的十进制字符串表示形式转换为 BigInteger。 
 BigInteger(String val, int radix) 
           将指定基数的 BigInteger 的字符串表示形式转换为 BigInteger。 
-  方法摘要 
+```
+ 
+### 方法摘要 
+读入：
+
+```Java
+public BigInteger nextBigInteger(int radix)
+	输入以radix为进制数的BigInteger
+```
+
+```Java
  BigInteger abs() 
           返回其值是此 BigInteger 的绝对值的 BigInteger。 
  BigInteger add(BigInteger val) 
@@ -131,6 +142,8 @@ static BigInteger valueOf(long val)
           返回其值等于指定 long 的值的 BigInteger。 
  BigInteger xor(BigInteger val) 
           返回其值为 (this ^ val) 的 BigInteger。 
+```
+
 
 ## 使用举例
 ```java
