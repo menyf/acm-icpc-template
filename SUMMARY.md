@@ -83,6 +83,7 @@
     * [Prim](7_图论/最小生成树/Prim.md)
     * [Prim\_Heap](7_图论/最小生成树/Prim_Heap.md)
     * [Kruskal](7_图论/最小生成树/Kruskal.md)
+* [次小生成树](7_图论/最小生成树/SMST.md)
 * [LCA](7_图论/LCA/README.md)
     * [LCA -&gt; RMQ](7_图论/LCA/RMQ.md)
     * [Tarjan](7_图论/LCA/Tarjan.md)
@@ -95,6 +96,7 @@
     * [Dinic](7_图论/网络流/Dinic.md)
     * [ISAP](7_图论/网络流/ISAP.md)
     * [最小费用最大流](7_图论/网络流/最小费用最大流.md)
+* [舞蹈链](7_图论/网络流/舞蹈链.md)
 
 ## PART VIII - 其他
 * [JAVA大数类](8_其他/JAVA大数类.md)
