@@ -15,7 +15,7 @@
 ## 模版
 ```C++
 // 顶点下标1～n
-const int Vmax = 105;
+const int Vmax = 1005;
 namespace SMST{
     // MST
     int n;//n个顶点
@@ -69,20 +69,23 @@ namespace SMST{
                 }
             }
             if(minc == INF) return -1; //n个点不联通 无生成树
-            
+
             weight+=dis[pos];
             used[pos][pre[pos]] = true; // for SMST
             used[pre[pos]][pos] = true; // for SMST
+            vis[pos]=true;
+
             for(int j=1;j<=n;j++){
+                if (j == pos) continue;
                 if(vis[j]) {
                     maxd[j][pos] = maxd[pos][j] = max(dis[pos], maxd[j][pre[pos]]);
                 }
-                if(!vis[j]&&mp[pos][j]<dis[j]){
+                else if(!vis[j]&&mp[pos][j]<dis[j]){
                     dis[j]=mp[pos][j];
                     pre[j]=pos;
                 }
             }
-            vis[pos]=true; //此句话位置容易出问题
+            
         }
         return weight;
     }
