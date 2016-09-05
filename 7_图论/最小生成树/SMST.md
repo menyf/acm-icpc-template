@@ -13,6 +13,9 @@
 * 对于平行边/自环要进行特殊处理 
 
 ## 模版
+### 邻接矩阵
+缺点：无法处理平行边
+
 ```C++
 // 顶点下标1～n
 const int Vmax = 1005;
@@ -110,4 +113,119 @@ namespace SMST{
         return subweight;
     }
 }
+
 ```
+
+### 邻接表
+
+```C++
+// 顶点下标1～n
+const int Vmax = 105;
+namespace SMST{
+    struct Edge{
+        int u,v,next,w,vis;
+    }e[405];
+    int ecnt;
+    int he[Vmax];
+    
+    // MST
+    int n;//n个顶点
+    int s;//起点 树的根
+    int weight; //MST的重量
+    int dis[Vmax];  //dis[i]表示指向i点的最短的边
+    bool vis[Vmax]; //标记该点是否在树上
+    int pre[Vmax];//记录前驱
+    
+    //SMST
+    int subweight; //SMST的重量
+    int id[Vmax];
+    int maxd[Vmax][Vmax];   //maxd[u][v]表示 u-v路径上最大的边权
+    
+    void init(int Vsz,int source=1){//默认起点为1
+        memset(he, -1, sizeof(he));
+        ecnt = 0;
+        memset(dis, INF, sizeof(dis));
+        memset(maxd, 0, sizeof(maxd));
+        memset(vis, false, sizeof(vis));
+        n=Vsz;
+        weight=0;
+        dis[source] = 0;
+        pre[source] = source;
+        s = source;
+    }
+    
+    //1~n的邻接矩阵
+    void adde(int u,int v,int w){
+        e[ecnt].vis = 0;
+        e[ecnt].u = u;
+        e[ecnt].v = v;
+        e[ecnt].w = w;
+        e[ecnt].next = he[u];
+        he[u] = ecnt ++;
+    }
+    
+    int prim(){
+        /*
+         返回值说明：
+         -1: 无生成树
+         weight: 最小生成树的重量
+         */
+        for(int i=1;i<=n;i++){
+            int pos=0;
+            int minc = INF;
+            for(int j=1;j<=n;j++){
+                if(!vis[j]&&dis[j]<minc){
+                    pos=j;
+                    minc = dis[j];
+                }
+            }
+            if(minc == INF) return -1; //n个点不联通 无生成树
+            
+            weight+=dis[pos];
+            vis[pos]=true;
+            if (i!=s) {
+                e[id[pos]].vis = 1;
+                e[id[pos]^1].vis = 1;
+            }
+            
+            for(int j=1;j<=n;j++){
+                if (j == pos) continue;
+                if(vis[j]) {
+                    maxd[j][pos] = maxd[pos][j] = max(dis[pos], maxd[j][pre[pos]]);
+                }
+            }
+            for (int j = he[pos]; j!=-1; j = e[j].next) {
+                int v = e[j].v;
+                if (!vis[v] && e[j].w < dis[v]) {
+                    dis[v] = e[j].w;
+                    pre[v] = pos;
+                    id[v] = j;
+                }
+            }
+        }
+
+        return weight;
+    }
+    
+    int smst(){
+        /*
+         返回值说明：
+         -1: 无生成树
+         -2: 有最小生成树 无次小生成树 （比如给出的图即为一棵树）
+         subweight: 次小生成树的重量
+         */
+        if(prim() == -1) return -1; //无生成树
+        subweight = INF;
+        for (int i=0; i<ecnt; i+=2) {
+            int u = e[i].u;
+            int v = e[i].v;
+            if (e[i].vis == 0) {
+                subweight = min(subweight, weight + e[i].w - maxd[u][v]);
+            }
+        }
+        if(subweight == INF) return -2; //只有唯一生成树 也就是说只有最小生成树 没有次小生成树
+        return subweight;
+    }
+}
+```
+

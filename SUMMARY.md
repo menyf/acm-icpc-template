@@ -84,6 +84,7 @@
     * [Prim\_Heap](7_图论/最小生成树/Prim_Heap.md)
     * [Kruskal](7_图论/最小生成树/Kruskal.md)
 * [次小生成树](7_图论/最小生成树/SMST.md)
+* [最小树形图](7_图论/最小生成树/最小树形图.md)
 * [LCA](7_图论/LCA/README.md)
     * [LCA -&gt; RMQ](7_图论/LCA/RMQ.md)
     * [Tarjan](7_图论/LCA/Tarjan.md)
