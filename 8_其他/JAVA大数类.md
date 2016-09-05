@@ -170,3 +170,6 @@ public class Main{
     }
 }
 ```
+
+## 其他
+执行到EOF——`while(input.hasNext()){...}`
