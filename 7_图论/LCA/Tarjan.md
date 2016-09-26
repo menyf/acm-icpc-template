@@ -29,12 +29,12 @@
 #include <vector>
 #define eps 1e-8
 #define INF 0x7fffffff
-#define maxn 10005
 #define PI acos(-1.0)
 #define seed 31//131,1313
 typedef long long LL;
 typedef unsigned long long ULL;
 using namespace std;
+const int maxn = 300000+10;
 int pre[maxn],point[maxn],point2[maxn];
 bool vis[maxn];
 struct Edge
@@ -47,9 +47,9 @@ struct Query
     int v;
     int w;
     int next;
-} query[maxn];
+} query[maxn*2];
 int top,top2;
-int init()
+void init()
 {
     memset(vis,0,sizeof(vis));
     memset(point,-1,sizeof(point));
@@ -57,13 +57,13 @@ int init()
     top=0;
     top2=0;
 }
-int add_edge(int u,int v)
+void add_edge(int u,int v)
 {
     edge[top].v=v;
     edge[top].next=point[u];///上一条边的编号
     point[u]=top++;///u点的第一条边编号变成head
 }
-int findset(int x) ///并查集
+void findset(int x) ///并查集
 {
     if(x!=pre[x])
     {
@@ -71,7 +71,7 @@ int findset(int x) ///并查集
     }
     return pre[x];
 }
-int add_query(int u,int v)
+void add_query(int u,int v)
 {
     query[top2].v=v;
     query[top2].w=-1;
