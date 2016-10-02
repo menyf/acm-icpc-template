@@ -39,7 +39,7 @@ void init(){
 	// SPFA初始化
 	memset(inq, false, sizeof(inq));
 	memset(vcnt,0,sizeof(vcnt));
-	memset(dis, INF, sizeof(INF));	//即使是dis类型为long long也可赋int型的INF
+	memset(dis, INF, sizeof(dis));	//即使是dis类型为long long也可赋int型的INF
 }
 //***注意双向加边
 void adde(int from,int to,mytype w){
