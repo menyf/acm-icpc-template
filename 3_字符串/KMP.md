@@ -18,6 +18,7 @@
 ## Tips
 * `getFail()`会在`KMP`中自动调用
 * 字符串均从`s[0]`开始
+* `KMP`函数中的`for`的`while`利用了字符串最后一个字符是`\0`的特性，当匹配的是int数组时需要特别注意（坑题示例[HDU 5918 Sequence I](http://acm.hdu.edu.cn/showproblem.php?pid=5918)）
 
 ## 模版
 ```C++
