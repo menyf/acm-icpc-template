@@ -123,4 +123,10 @@
 * [To Learn List](tolearn.md)
 
 ## END and END
-
+* [DLX](9_Others/DLX.md)
+* [字符串hash](9_Others/字符串hash.md)
+* [主席树](9_Others/ZXTree.md)
+* [划分树](9_Others/划分树.md)
+* [背包问题](9_Others/背包问题.md)
+* [LCT](9_Others/LCT.md)
+* [次短路与第K短路](9_Others/次短路与第K短路.md)
