@@ -113,12 +113,10 @@
 * [高精度计算-大数类](8_其他/大数类.md)
 * [double的比较](8_其他/double_compare.md)
 * [矩阵类](8_其他/矩阵类.md)
-* [计算几何](8_其他/计算几何.md)
-* [STL](8_其他/STL.md)
+* [二维计算几何-wlhz](8_其他/二维计算几何_wlhz.md)
+* [计算几何-qscqesze](8_其他/计算几何_qscqesze.md)
 * [sscanf](8_其他/sscanf.md)
 * [sprintf](8_其他/sprintf.md)
-* [逆序数](8_其他/逆序数.md)
-* [RMQ问题](8_其他/RMQ.md)
 
 ## END
 * [To Do List](todo.md)
