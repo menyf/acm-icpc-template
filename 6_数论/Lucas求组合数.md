@@ -35,5 +35,3 @@ ll Lucas(ll n, ll m){// n>m
     return  m ? (C(n%mod , m%mod) * Lucas(n/mod, m/mod)) % mod : 1;
 }
 ```
-
-

@@ -1,5 +1,4 @@
 # Hopcroft-Karp
-
 ## 说明
 二分图最大匹配 Hopcroft-Karp算法
 
@@ -18,7 +17,7 @@
 3. `int ans = match();` 得到最大匹配数
 
 ## Tips
-下标从1~nx以及1~ny
+* 下标从1~nx以及1~ny
 
 ## 模版
 ```C++

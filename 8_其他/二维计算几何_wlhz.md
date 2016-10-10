@@ -4,7 +4,7 @@
 
 version 2016.10.10
 
-```
+```C++
 #include<cstdio>
 #include<cstdlib>
 #include<cstring>

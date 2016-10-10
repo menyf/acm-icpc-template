@@ -6,6 +6,7 @@
 转自 [多项式乘法运算初级版——ACdreamer](http://blog.csdn.net/acdreamers/article/details/39005227)
 
 ## 模版
+
 ```C++
 //len长度为原长度的两倍
 //while(len < 2*len1 || len < 2*len2) len <<= 1;  
@@ -85,5 +86,4 @@ void Work()
     for(int i=0; i<len; i++)
         result[i] = va[i].r+0.5;
 }
-
 ```

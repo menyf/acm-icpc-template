@@ -1,7 +1,7 @@
 # JAVA输入挂
 
 ## 模版
-```
+```Java
 // uwi输入挂
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
