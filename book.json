@@ -1,6 +1,6 @@
 {
     "author": "MenYifan",
-    "description": "This is a sample book created by gitbook",
+    "description": "This is a ACM-ICPC-Template book created by MenYifan",
     "extension": null,
     "generator": "site",
     "isbn": "null",
@@ -18,18 +18,21 @@
     },
     "output": "../test-gh-pages",
     "pdf": {
-        "fontSize": 12,
+        "fontSize": 10,
         "footerTemplate": null,
         "headerTemplate": null,
         "margin": {
-            "bottom": 36,
+            "bottom": 50,
             "left": 62,
             "right": 62,
-            "top": 36
+            "top": 50
         },
         "pageNumbers": true,
         "paperSize": "a4"
     },
+    "styles": {
+        "pdf": "styles/bootstrap.min.css"
+    },  
     "plugins": [
         "disqus",
         "multipart",

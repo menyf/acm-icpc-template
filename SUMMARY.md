@@ -108,6 +108,7 @@
 * [交叉染色](7_图论/交叉染色.md)
 
 ## PART VIII - 其他
+* [JAVA输入挂](8_其他/JAVA输入挂.md)
 * [JAVA大数类](8_其他/JAVA大数类.md)
 * [高精度计算-大数类](8_其他/大数类.md)
 * [double的比较](8_其他/double_compare.md)
