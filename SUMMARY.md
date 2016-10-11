@@ -122,7 +122,7 @@
 * [To Do List](todo.md)
 * [To Learn List](tolearn.md)
 
-## END and END
+## 备用
 * [DLX](9_Others/DLX.md)
 * [字符串hash](9_Others/字符串hash.md)
 * [主席树](9_Others/ZXTree.md)
@@ -130,3 +130,15 @@
 * [背包问题](9_Others/背包问题.md)
 * [LCT](9_Others/LCT.md)
 * [次短路与第K短路](9_Others/次短路与第K短路.md)
+* [提示](9_Others/tips/README.md)
+    * [位操作](9_Others/tips/位操作.md)
+    * [卡题点](9_Others/tips/卡题点.md)
+    * [奇技淫巧](9_Others/tips/skill.md)
+    * [借助Python](9_Others/tips/python.md)
+    * [使用Java](9_Others/tips/java.md)
+* [库函数](9_Others/库函数.md)
+* [哈希](9_Others/哈希.md)
+* [组合数学](9_Others/组合数学.md)
+* [树形DP](9_Others/树形dp.md)
+* [网络流上下界问题](9_Others/网络流上下界问题.md)
+* [计算几何合集](9_Others/计算几何合集.md)
