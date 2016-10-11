@@ -37,7 +37,8 @@
         "disqus",
         "multipart",
         "back-to-top-button",
-        "toggle-chapters"
+        "toggle-chapters",
+        "mathjax"
     ],
     "pluginsConfig": {
         "disqus": {
