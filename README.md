@@ -12,21 +12,21 @@ ACM快要退役了，这个模版估计也不会再更新了。欢迎任何acmer
 
 This template is not under any license, which means you are free to read or download, even for a commercial use.
 
-### Markdown version
+### MarkDown Version
 如果你想下载本模版的markdown版本，请使用如下指令
 
-```
+```bash
 git clone https://git.gitbook.com/menyf/acm-icpc-template.git
 ```
 
-### PDF version
+### PDF Version
 如果你想下载本模版的pdf版本，请前往[https://www.gitbook.com/book/menyf/acm-icpc-template/details](https://www.gitbook.com/book/menyf/acm-icpc-template/details)点击系在pdf版本
 
 ## 推荐
 
 推荐几个ACM模版
 
-* [范神的模版/ACM-ICPC-Template](https://github.com/fz568573448/ACM-ICPC-Template/tree/master/模板) 很多模版摘自这位学长
+* [范神的模版/ACM-ICPC-Template](https://github.com/fz568573448/ACM-ICPC-Template/tree/master/模板) 
 * [超级神犇Blog](http://www.cnblogs.com/qscqesze/category/660401.html)
 * [金海峰的GitHub](https://github.com/jhfjhfj1/codelib)
 * [神犇一号GitBook](https://jiangoil.gitbooks.io/myacmtemplate/content/index.html)
