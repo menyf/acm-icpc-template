@@ -117,6 +117,7 @@
 * [计算几何-qscqesze](8_其他/计算几何_qscqesze.md)
 * [sscanf](8_其他/sscanf.md)
 * [sprintf](8_其他/sprintf.md)
+* [写过的bug](8_其他/bug.md)
 
 ## END
 * [To Do List](todo.md)
