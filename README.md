@@ -1,13 +1,13 @@
 # 简介
 ---
 
-ACM快要退役了，这个模版估计也不会再更新了。欢迎任何acmer克隆、补充。
+ACM已退役，这个模版估计也不会再更新了。欢迎任何acmer克隆、补充。
 
-感谢ACM帮我在减少了很多浪费的时间以及认识了很多优秀的学长、队友们。
+感谢ACM让我认识了很多优秀的学长、队友们。
 
 May the force be with you.
 
---MenYifan 2016.10.10
+--MenYifan 2016.10.19
 
 ## 下载（Download）
 **任何人可以随意使用本模版，没有任何限制，但是本人不建议用于任何商业用途。**
@@ -23,6 +23,14 @@ git clone https://git.gitbook.com/menyf/acm-icpc-template.git
 
 ### PDF/Mobi/ePub Version
 如果你想下载本模版的PDF/Mobi/ePub版本，请前往[https://www.gitbook.com/book/menyf/acm-icpc-template/details](https://www.gitbook.com/book/menyf/acm-icpc-template/details)点击系在pdf版本
+
+## Ralated Spider
+提供三个爬虫脚本，可以把在HDU/POJ/Vjudge上的ac代码全部抓下来
+
+* [HDUSpider](https://github.com/menyf/TinyProject/blob/master/HDUSpider.py)
+* [POJSpider](https://github.com/menyf/TinyProject/blob/master/POJSpider.py)
+* [VjudgeSpider](https://github.com/menyf/TinyProject/blob/master/VjudgeSpider.py)
+
 
 ## 推荐
 
